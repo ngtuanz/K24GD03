@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\nguye\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\K24GD03\\LAB01\\",
+  "WorkspaceRootPath": "C:\\Users\\nguye\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\K24GD03\\LAB02\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A619CC1D-7613-4510-BFAD-B77E7C71265F}|LAB01\\LAB01.csproj|c:\\users\\nguye\\onedrive\\ta\u0300i li\u00EA\u0323u\\github\\k24gd03\\lab01\\lab01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A619CC1D-7613-4510-BFAD-B77E7C71265F}|LAB01\\LAB01.csproj|solutionrelative:lab01\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{979D73A5-5322-4244-860E-B2A83F67896C}|LAB02\\LAB02.csproj|c:\\users\\nguye\\onedrive\\ta\u0300i li\u00EA\u0323u\\github\\k24gd03\\lab02\\lab02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{979D73A5-5322-4244-860E-B2A83F67896C}|LAB02\\LAB02.csproj|solutionrelative:lab02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,13 +24,13 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\K24GD03\\LAB01\\LAB01\\Program.cs",
-              "RelativeDocumentMoniker": "LAB01\\Program.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\K24GD03\\LAB01\\LAB01\\Program.cs",
-              "RelativeToolTip": "LAB01\\Program.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBgAAAAMAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\K24GD03\\LAB02\\LAB02\\Program.cs",
+              "RelativeDocumentMoniker": "LAB02\\Program.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\K24GD03\\LAB02\\LAB02\\Program.cs",
+              "RelativeToolTip": "LAB02\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T03:38:04.128Z",
+              "WhenOpened": "2025-06-11T01:37:28.752Z",
               "EditorCaption": ""
             }
           ]

@@ -19,9 +19,10 @@ namespace LAB01
 
             Console.OutputEncoding = Encoding.UTF8;
             Console.Write("Nhập số a: ");
-            double a = Convert.ToDouble(Console.ReadLine());
+            Double a = Convert.ToDouble(Console.ReadLine());
             Console.Write("Nhập số b: ");
-            double b = Convert.ToDouble(Console.ReadLine());
+            Double b = Convert.ToDouble(Console.ReadLine());
+            
 
             Console.WriteLine($"Tổng hai số a và b: {tong.Tong2s(a, b)} ");
             Console.WriteLine($"Hiệu hai số a và b: {hieu.Hieu2s(a, b)}");
