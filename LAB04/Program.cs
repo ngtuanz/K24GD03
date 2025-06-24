@@ -50,7 +50,7 @@ namespace LAB04
 
             var testData = await firebase.Child("test").OnceSingleAsync<dynamic>();
             Console.WriteLine($"Message : {testData.Message}");
-            Console.WriteLine($"Timelap : {testData.Timetamp}");
+
         }
 
         public static async Task UpdateTestData()

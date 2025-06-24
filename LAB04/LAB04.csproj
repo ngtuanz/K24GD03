@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CFB779D4-FE81-4B12-9E19-4EA2950DEDCE}</ProjectGuid>
+    <ProjectGuid>{1061F378-3382-4A6F-9376-6820B3510232}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>LAB04</RootNamespace>
     <AssemblyName>LAB04</AssemblyName>
