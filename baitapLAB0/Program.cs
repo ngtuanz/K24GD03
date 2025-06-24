@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Firebase.Database;
 using Firebase.Database.Query;
 using FirebaseAdmin;
@@ -12,10 +14,13 @@ namespace FirebaseConsole
     {
         public class Student
         {
+            public string Id {  get; set; }
             public string HoTen { get; set; }
             public string MSSV { get; set; }
             public string Email { get; set; }
             public string Lop { get; set; }
+
+            public double Score { get; set; }
         }
 
         static async Task Main(string[] args)
@@ -39,6 +44,7 @@ namespace FirebaseConsole
                 Console.WriteLine("3. Lay du lieu tu Firebase");
                 Console.WriteLine("4. Cap nhat du lieu");
                 Console.WriteLine("5. Xoa du lieu");
+                Console.WriteLine("6. Top 5 nguoi co diem cao nhat");
                 Console.WriteLine("0. Thoat");
                 Console.Write("Chon: ");
                 var chon = Console.ReadLine();
@@ -54,6 +60,8 @@ namespace FirebaseConsole
                     svTam.Email = Console.ReadLine();
                     Console.Write("Lop: ");
                     svTam.Lop = Console.ReadLine();
+                    Console.Write("Score: ");
+                    svTam.Score = double.Parse(Console.ReadLine());
                     Console.WriteLine("Da luu tam thong tin sinh vien.");
                 }
                 else if (chon == "2")
@@ -74,7 +82,7 @@ namespace FirebaseConsole
                     foreach (var item in danhSach)
                     {
                         var sv = item.Object;
-                        Console.WriteLine($"- {sv.HoTen} | MSSV: {sv.MSSV} | Email: {sv.Email} | Lop: {sv.Lop}");
+                        Console.WriteLine($"- {sv.HoTen} | MSSV: {sv.MSSV} | Email: {sv.Email} | Lop: {sv.Lop} | Score: {sv.Score}");
                     }
                 }
                 else if (chon == "4")
@@ -88,13 +96,16 @@ namespace FirebaseConsole
                     string email = Console.ReadLine();
                     Console.Write("Lop moi: ");
                     string lop = Console.ReadLine();
+                    Console.Write("Score moi: ");
+                    double Score = double.Parse(Console.ReadLine());
 
                     var svMoi = new Student
                     {
                         MSSV = mssv,
                         HoTen = hoTen,
                         Email = email,
-                        Lop = lop
+                        Lop = lop,
+                        Score = Score
                     };
 
                     await firebase.Child("sinhviens").Child(mssv).PutAsync(svMoi);
@@ -107,6 +118,30 @@ namespace FirebaseConsole
 
                     await firebase.Child("sinhviens").Child(mssv).DeleteAsync();
                     Console.WriteLine("Da xoa sinh vien.");
+                }
+                else if (chon == "6")
+                {
+                    var myStudents = await firebase.Child("sinhviens").OnceAsync<Student>();
+
+                    var topStudents = myStudents
+                        .Select(s => new Student
+                        {
+                            Id = s.Key,
+                            HoTen = s.Object.HoTen,
+                            MSSV = s.Object.MSSV,
+                            Email = s.Object.Email,
+                            Lop = s.Object.Lop,
+                            Score = s.Object.Score
+                        })
+                        .OrderByDescending(s => s.Score)
+                        .Take(5)
+                        .ToList();
+
+                    Console.WriteLine("Top 5 sinh vien diem cao nhat:");
+                    foreach (var sv in topStudents)
+                    {
+                        Console.WriteLine($"- {sv.HoTen} | MSSV: {sv.MSSV} | Lop: {sv.Lop} | Score: {sv.Score}");
+                    }
                 }
                 else if (chon == "0")
                 {
