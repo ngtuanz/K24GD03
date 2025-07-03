@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\nguye\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\K24GD03\\LAB11\\",
+  "WorkspaceRootPath": "C:\\Users\\nguye\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\K24GD03\\THI THUC HANH\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EBF4C4EE-B368-4167-99AB-253D6A292405}|LAB11.csproj|c:\\users\\nguye\\onedrive\\ta\u0300i li\u00EA\u0323u\\github\\k24gd03\\lab11\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBF4C4EE-B368-4167-99AB-253D6A292405}|LAB11.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AB6513E6-1BEE-4C23-AA3E-6F62383C0B5F}|THI THUC HANH.csproj|c:\\users\\nguye\\onedrive\\ta\u0300i li\u00EA\u0323u\\github\\k24gd03\\thi thuc hanh\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB6513E6-1BEE-4C23-AA3E-6F62383C0B5F}|THI THUC HANH.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,13 +24,13 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\K24GD03\\LAB11\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\K24GD03\\THI THUC HANH\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\K24GD03\\LAB11\\Program.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\GitHub\\K24GD03\\THI THUC HANH\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAqwGQAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T03:47:59.107Z",
+              "WhenOpened": "2025-07-03T01:37:13.15Z",
               "EditorCaption": ""
             }
           ]
